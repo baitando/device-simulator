@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "smartmate.gateway.iothub.connection",
+      "type": "java.lang.String",
+      "description": "Description for smartmate.gateway.iothub.connection."
+    }
+  ] }
