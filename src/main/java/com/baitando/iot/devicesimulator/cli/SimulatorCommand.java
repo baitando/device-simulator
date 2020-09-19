@@ -23,7 +23,7 @@ import java.util.concurrent.Callable;
  * the configured gateway connection.
  */
 @Component
-@Command(name = "simulator", mixinStandardHelpOptions = true)
+@Command(name = "device-simulator")
 public class SimulatorCommand implements Callable<Integer> {
 
     @Option(names = "-t", description = "template file path")
