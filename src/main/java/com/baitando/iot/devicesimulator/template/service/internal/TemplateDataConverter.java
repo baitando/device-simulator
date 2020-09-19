@@ -15,7 +15,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class TemplateDataConverter {
+public final class TemplateDataConverter {
+
+    private TemplateDataConverter() {
+        // Prevent instantiation
+    }
 
     static List<TemplateData> convertToTemplateData(String csvInput) throws IOException, CsvValidationException {
         List<TemplateData> templateDataList = new ArrayList<>();

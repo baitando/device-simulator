@@ -7,7 +7,11 @@ import java.util.regex.Pattern;
 
 public class PlaceholderExtractor {
 
-    private static final String EXTRACTOR_REGEX = ".*\\$\\{(.*?)\\}.*";
+    private static final String EXTRACTOR_REGEX = ".*\\$\\{(.*?)}.*";
+
+    private PlaceholderExtractor() {
+        // Prevent instantiation
+    }
 
     static List<String> extractPlaceholders(String template) {
         List<String> placeholders = new ArrayList<>();
