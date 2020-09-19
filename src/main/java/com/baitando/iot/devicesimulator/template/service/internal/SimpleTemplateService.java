@@ -21,6 +21,7 @@ import java.util.List;
 
 import static com.baitando.iot.devicesimulator.template.service.internal.PlaceholderExtractor.extractPlaceholders;
 import static com.baitando.iot.devicesimulator.template.service.internal.TemplateDataConverter.convertToTemplateData;
+import static com.baitando.iot.devicesimulator.template.service.internal.TemplateDataVerifier.verifyPlaceholders;
 import static com.baitando.iot.devicesimulator.template.service.internal.TemplateDefinitionConverter.convertToTemplateDefinition;
 
 /**
@@ -77,6 +78,8 @@ public class SimpleTemplateService implements TemplateService {
     @Override
     public String processTemplate(TemplateDefinition templateDefinition, TemplateData templateData) throws TemplateProcessingException {
         logger.info("Processing template [templateName={}]", templateDefinition.getName());
+
+        verifyPlaceholders(templateDefinition, templateData);
 
         String template = templateDefinition.getTemplate();
         for (PlaceholderDefinition placeholderDefinition : templateDefinition.getPlaceholders()) {
