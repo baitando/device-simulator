@@ -1,4 +1,7 @@
 # Device Simulator
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=baitando_device-simulator&metric=alert_status)](https://sonarcloud.io/dashboard?id=baitando_device-simulator)
+
 This project provides an IoT device simulator.
 Currently, it supports only Azure IoT Hub devices.
 
