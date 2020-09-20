@@ -1,0 +1,6 @@
+simulator:
+  gateway:
+      connection: <replace with Azure IoT Hub device connection String>
+logging:
+  level:
+    com.baitando: debug
