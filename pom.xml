@@ -17,6 +17,9 @@
     <properties>
         <java.version>11</java.version>
         <azure.iot.device.client.version>1.25.0</azure.iot.device.client.version>
+        <sonar.projectKey>baitando_device-simulator</sonar.projectKey>
+        <sonar.organization>baitando</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
